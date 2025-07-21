@@ -6,7 +6,7 @@ import couple2 from "../../ruchu.jpg";
 import couple3 from "../../ruchika saree.jpg";
 import couple4 from "../../aniket black.jpg";
 import couple5 from "../../gullu.jpg";
-import couple6 from "../../image.png";
+import couple6 from "../../Screenshot 2025-07-21 212846.png";
 
 const photos = [
   { src: couple1, alt: "Our first moment" },
