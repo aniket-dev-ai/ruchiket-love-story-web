@@ -61,7 +61,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom romantic colors
+				'rose-pink': 'hsl(var(--rose-pink))',
+				'soft-pink': 'hsl(var(--soft-pink))',
+				'lavender': 'hsl(var(--lavender))',
+				'cream': 'hsl(var(--cream))',
+				'romantic-purple': 'hsl(var(--romantic-purple))',
+				'heart-red': 'hsl(var(--heart-red))'
+			},
+			fontFamily: {
+				'romantic': ['Poppins', 'Inter', 'system-ui', 'sans-serif'],
+				'script': ['Dancing Script', 'cursive'],
+				'elegant': ['Playfair Display', 'serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +96,35 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+					'33%': { transform: 'translateY(-20px) rotate(10deg)' },
+					'66%': { transform: 'translateY(-10px) rotate(-5deg)' }
+				},
+				'heartbeat': {
+					'0%, 100%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(1.1)' }
+				},
+				'sparkle': {
+					'0%, 100%': { opacity: '0', transform: 'scale(0)' },
+					'50%': { opacity: '1', transform: 'scale(1)' }
+				},
+				'typewriter': {
+					'to': { width: '100%' }
+				},
+				'blink': {
+					'50%': { 'border-color': 'transparent' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'heartbeat': 'heartbeat 2s ease-in-out infinite',
+				'sparkle': 'sparkle 2s ease-in-out infinite',
+				'typewriter': 'typewriter 4s steps(40) 1s forwards',
+				'blink': 'blink 1s infinite'
 			}
 		}
 	},
