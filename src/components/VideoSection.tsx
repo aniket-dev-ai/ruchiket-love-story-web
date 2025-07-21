@@ -15,7 +15,7 @@ const VideoSection = () => {
             Just For You
           </h2>
           <p className="text-lg text-muted-foreground">
-            A special message from my heart to yours
+            A personal video I made with my voice and our beautiful memories
           </p>
         </motion.div>
 
@@ -26,7 +26,7 @@ const VideoSection = () => {
           className="relative"
         >
           <div className="card-romantic p-2">
-            <div className="relative aspect-video rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 group cursor-pointer">
+            <div className="relative aspect-[9/16] max-w-sm mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 group cursor-pointer">
               {/* Placeholder for video */}
               <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/10 to-accent/10">
                 <motion.div
@@ -38,10 +38,10 @@ const VideoSection = () => {
                   </div>
                   <div className="text-center">
                     <p className="text-lg font-romantic text-primary">
-                      Click to play our special video
+                      Play my special song for you
                     </p>
                     <p className="text-sm text-muted-foreground">
-                      (Replace with your video link)
+                      With my voice & our memories
                     </p>
                   </div>
                 </motion.div>
