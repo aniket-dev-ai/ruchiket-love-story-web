@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import couple1 from "@/assets/couple-1.jpg";
-import couple2 from "@/assets/couple-2.jpg";
-import couple3 from "@/assets/couple-3.jpg";
-import couple4 from "@/assets/couple-4.jpg";
-import couple5 from "@/assets/couple-5.jpg";
-import couple6 from "@/assets/couple-6.jpg";
+import couple1 from "../../ruchika black.jpg";
+import couple2 from "../../ruchu.jpg";
+import couple3 from "../../ruchika saree.jpg";
+import couple4 from "../../aniket black.jpg";
+import couple5 from "../../gullu.jpg";
+import couple6 from "../../image.png";
 
 const photos = [
   { src: couple1, alt: "Our first moment" },
