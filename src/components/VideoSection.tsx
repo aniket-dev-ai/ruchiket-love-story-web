@@ -29,7 +29,7 @@ const VideoSection = () => {
             <div className="relative aspect-[9/16] max-w-sm mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 group cursor-pointer">
               {/* Placeholder for video */}
               <video
-                src="../../Ruchika - Made with Clipchamp.mp4" // Put your video in public/video/memories.mp4
+                src="https://ik.imagekit.io/7p4emhequ/Ruchika%20-%20Made%20with%20Clipchamp.mp4?updatedAt=1753113246769"
                 controls
                 className="w-full h-full object-cover"
                 poster="/poster.jpg" // Optional thumbnail before play
