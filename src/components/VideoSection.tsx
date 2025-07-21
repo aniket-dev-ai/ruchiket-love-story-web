@@ -28,33 +28,25 @@ const VideoSection = () => {
           <div className="card-romantic p-2">
             <div className="relative aspect-[9/16] max-w-sm mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 group cursor-pointer">
               {/* Placeholder for video */}
-              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/10 to-accent/10">
-                <motion.div
-                  whileHover={{ scale: 1.1 }}
-                  className="flex flex-col items-center space-y-4"
-                >
-                  <div className="w-20 h-20 bg-primary/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:bg-primary/30 transition-colors">
-                    <Play className="w-8 h-8 text-primary ml-1" />
-                  </div>
-                  <div className="text-center">
-                    <p className="text-lg font-romantic text-primary">
-                      Play my special song for you
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      With my voice & our memories
-                    </p>
-                  </div>
-                </motion.div>
-              </div>
+              <video
+                src="../../Ruchika - Made with Clipchamp.mp4" // Put your video in public/video/memories.mp4
+                controls
+                className="w-full h-full object-cover"
+                poster="/poster.jpg" // Optional thumbnail before play
+              ></video>
 
               {/* Decorative border */}
               <div className="absolute inset-0 border-4 border-primary/20 rounded-2xl pointer-events-none"></div>
-              
+
               {/* Corner decorations */}
               <div className="absolute top-3 left-3 text-primary/30">
                 <motion.div
                   animate={{ rotate: 360 }}
-                  transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+                  transition={{
+                    duration: 10,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
                 >
                   ✨
                 </motion.div>
@@ -62,7 +54,11 @@ const VideoSection = () => {
               <div className="absolute top-3 right-3 text-primary/30">
                 <motion.div
                   animate={{ rotate: -360 }}
-                  transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
+                  transition={{
+                    duration: 12,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
                 >
                   💕
                 </motion.div>
@@ -78,7 +74,11 @@ const VideoSection = () => {
               <div className="absolute bottom-3 right-3 text-primary/30">
                 <motion.div
                   animate={{ rotate: -360 }}
-                  transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+                  transition={{
+                    duration: 15,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
                 >
                   💖
                 </motion.div>
@@ -96,21 +96,36 @@ const VideoSection = () => {
           </motion.div>
           <motion.div
             animate={{ y: [0, -15, 0] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 1,
+            }}
             className="absolute -top-4 -right-8 text-2xl opacity-60"
           >
             ✨
           </motion.div>
           <motion.div
             animate={{ y: [0, -12, 0] }}
-            transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+            transition={{
+              duration: 3.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 0.5,
+            }}
             className="absolute -bottom-6 -left-4 text-2xl opacity-60"
           >
             🌸
           </motion.div>
           <motion.div
             animate={{ y: [0, -8, 0] }}
-            transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
+            transition={{
+              duration: 2.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 1.5,
+            }}
             className="absolute -bottom-8 -right-6 text-3xl opacity-60"
           >
             💖
