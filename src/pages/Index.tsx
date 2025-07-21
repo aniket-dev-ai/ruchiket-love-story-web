@@ -28,7 +28,7 @@ const Index = () => {
       <LoveLetters />
 
       {/* Music Section */}
-      <section className="py-20 px-4">
+      {/* <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -45,7 +45,7 @@ const Index = () => {
           </motion.div>
           <MusicPlayer />
         </div>
-      </section>
+      </section> */}
 
       {/* Video Section */}
       <VideoSection />
